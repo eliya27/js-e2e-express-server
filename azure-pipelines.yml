@@ -60,7 +60,5 @@ steps:
       myDockerRegistry
     repository: $(ImageName)
     command: push
-    tags: |
-      test1
-      test2
+    
       
