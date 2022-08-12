@@ -54,6 +54,12 @@ steps:
      repository: $(ImageName)
      command: build
      Dockerfile: src/Dockerfile  
+
+- task: Docker@2
+  inputs:
+    containerRegistry: 'myDockerRegistry'
+    command: 'login'
+    
 - task: Docker@2
   inputs:
     containerRegistry: 'myDockerRegistry'
