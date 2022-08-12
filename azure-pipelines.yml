@@ -54,3 +54,8 @@ steps:
      repository: $(ImageName)
      command: build
      Dockerfile: src/Dockerfile  
+- task: Docker@2
+  inputs:
+    containerRegistry: 'myDockerRegistry'
+    repository: 'javascript-docker'
+    command: 'push'
