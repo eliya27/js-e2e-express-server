@@ -11,6 +11,7 @@ pool:
   
 variables:
     ImageName: "javascript-docker"
+    Repository: "javascript-docker"
    
 
 steps:
@@ -59,8 +60,8 @@ steps:
   inputs:
     containerRegistry: |
       myDockerRegistry
-    repository: $(ImageName)
+    repository: $(Repository)
     command: push
-    tags: $(ImageName)
+    tags: v1
     
       
