@@ -61,5 +61,5 @@ steps:
     repository: $(ImageName)
     command: push
     tags: |
-      test1
+      myNodeApp
       
