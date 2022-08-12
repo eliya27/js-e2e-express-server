@@ -60,3 +60,4 @@ steps:
     containerRegistry: 'myACR'
     repository: 'javascript-docker'
     command: 'push'
+    tags: javascript-docker
