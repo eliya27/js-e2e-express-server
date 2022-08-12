@@ -10,7 +10,8 @@ pool:
   vmImage: ubuntu-latest
   
 variables:
-    ImageName: "javascript-docker"  
+    ImageName: "javascript-docker"
+   
 
 steps:
 - task: NodeTool@0
@@ -60,5 +61,6 @@ steps:
       myDockerRegistry
     repository: $(ImageName)
     command: push
+    tags: myapp
     
       
