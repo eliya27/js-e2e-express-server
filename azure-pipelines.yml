@@ -54,14 +54,3 @@ steps:
      repository: $(ImageName)
      command: build
      Dockerfile: src/Dockerfile  
-
-- task: Docker@2
-  displayName: Push image
-  inputs:
-    containerRegistry: |
-      myDockerRegistry
-    repository: $(Repository)
-    command: push
-    tags: v1
-    
-      
