@@ -61,6 +61,6 @@ steps:
       myDockerRegistry
     repository: $(ImageName)
     command: push
-    tags: $(ImageName)
+    tags: $(ImageName) eliyagervas/$(ImageName)
     
       
